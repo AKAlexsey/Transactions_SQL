@@ -3,6 +3,8 @@ package models
 import (
 	"database/sql"
 	"log"
+
+	_ "github.com/lib/pq"
 )
 
 var db *sql.DB
@@ -14,6 +16,7 @@ func InitDB() *sql.DB {
 	if err != nil {
 		log.Fatal(err)
 	}
+	log.Println("Successfully connected to PostgreSQL!")
 
 	if err = db.Ping(); err != nil {
 		log.Fatal(err)

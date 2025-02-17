@@ -12,6 +12,13 @@ func main() {
 	// Initialize the database
 	db := models.InitDB()
 	defer db.Close()
+	// Check if the connection is successful
+
+	err := db.Ping()
+	if err != nil {
+		log.Fatal("Error pinging the database: ", err)
+	}
+	log.Println("Successfully connected to PostgreSQL!")
 
 	// Initialize controllers
 	homeController := controllers.NewHomeController()
