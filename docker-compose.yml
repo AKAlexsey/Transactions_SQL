@@ -11,7 +11,7 @@ services:
       - DB_HOST=db
       - DB_USER=postgres
       - DB_PASSWORD=postgres
-      - DB_NAME=transactions-sql
+      - DB_NAME=transactions_sql
     volumes:
       - .:/app
 
@@ -20,7 +20,7 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=transactions-sql
+      - POSTGRES_DB=transactions_sql
     ports:
       - "5432:5432"
     volumes:

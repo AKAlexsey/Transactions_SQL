@@ -18,7 +18,7 @@ func main() {
 	if err != nil {
 		log.Fatal("Error pinging the database: ", err)
 	}
-	log.Println("Successfully connected to PostgreSQL!")
+	log.Println("Main. Successfully connected to PostgreSQL!")
 
 	// Initialize controllers
 	homeController := controllers.NewHomeController()

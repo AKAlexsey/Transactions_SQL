@@ -47,7 +47,7 @@ This is a template for a Go web application following the MVC (Model-View-Contro
    ```
 
 2. Set up the PostgreSQL database:
-   - Create a database named `transactions-sql`
+   - Create a database named `transactions_sql`
    - Update the database connection string in `models/db.go` if needed
 
 3. Run the application:

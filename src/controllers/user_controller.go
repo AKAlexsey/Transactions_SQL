@@ -12,7 +12,7 @@ type UserController struct {
 
 func NewUserController() *UserController {
 	return &UserController{
-		templates: template.Must(template.ParseGlob(filepath.Join("views", "*.html"))),
+		templates: template.Must(template.ParseGlob(filepath.Join("src/views", "*.html"))),
 	}
 }
 

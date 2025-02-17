@@ -12,7 +12,7 @@ type HomeController struct {
 
 func NewHomeController() *HomeController {
 	return &HomeController{
-		templates: template.Must(template.ParseGlob(filepath.Join("views", "*.html"))),
+		templates: template.Must(template.ParseGlob(filepath.Join("../views", "*.html"))),
 	}
 }
 

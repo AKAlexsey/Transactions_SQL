@@ -10,13 +10,13 @@ import (
 var db *sql.DB
 
 func InitDB() *sql.DB {
-	connStr := "postgres://postgres:postgres@db:5432/transactions-sql?sslmode=disable"
+	connStr := "postgres://postgres:postgres@localhost:5432/transactions_sql?sslmode=disable"
 	var err error
 	db, err = sql.Open("postgres", connStr)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Println("Successfully connected to PostgreSQL!")
+	log.Println("DB. Successfully connected to PostgreSQL! ")
 
 	if err = db.Ping(); err != nil {
 		log.Fatal(err)
