@@ -11,7 +11,7 @@ services:
       - DB_HOST=db
       - DB_USER=postgres
       - DB_PASSWORD=postgres
-      - DB_NAME=webapp
+      - DB_NAME=transactions-sql
     volumes:
       - .:/app
 
@@ -20,7 +20,7 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=webapp
+      - POSTGRES_DB=transactions-sql
     ports:
       - "5432:5432"
     volumes:

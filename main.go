@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/AKAlexsey/Transactions_SQL/src/controllers"
-	"github.com/AKAlexsey/Transactions_SQL/src/models"
+	"github.com/AKAlexsey/transactions-sql/controllers"
+	"github.com/AKAlexsey/transactions-sql/models"
 )
 
 func main() {
